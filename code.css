@@ -1,0 +1,56 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 15px 0;
+  z-index: 1000;
+  transition: background 0.4s ease;
+}
+
+nav.scrolled {
+  background: #1e1e1e; /* Change background when scrolled */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+  border-bottom: 2px solid #00ffff;
+}
+
+.content section {
+  height: 100vh;
+  padding-top: 80px;
+  text-align: center;
+  background: #f2f2f2;
+  border-bottom: 2px solid #ddd;
+}
